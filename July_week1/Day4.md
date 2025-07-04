@@ -70,11 +70,11 @@ System.out.println("나이는 " + age + "살 입니다. 학교에 다닙니다."
 
 ```java
 switch(ranking) {
-			case 1 -> medalColor = "G";
-			case 2 -> medalColor = "S";
-			case 3 -> medalColor = "B";
-			default -> medalColor = "A";
-		}
+	case 1 -> medalColor = "G";
+	case 2 -> medalColor = "S";
+	case 3 -> medalColor = "B";
+	default -> medalColor = "A";
+}
 		
 // -> 는 ; 를 만날 때 까지만 실행 됨.
 ```
