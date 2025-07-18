@@ -1,3 +1,10 @@
+---
+layout: post
+title: "7월 2일 수요일 TIL(자바 자료형)"
+date: 2025-07-02 00:00:00 +0900
+categories: July_week1
+---
+
 # 7월 2일 수요일 TIL 작성
 
 ## 1. 학습 주제

@@ -1,3 +1,10 @@
+---
+layout: post
+title: "7월 3일 목요일 TIL(자바 연산자,문자열,조건문)"
+date: 2025-07-03 00:00:00 +0900
+categories: July_week1
+---
+
 # 7월 3일 목요일 TIL 작성
 
 ## 1. 학습 주제

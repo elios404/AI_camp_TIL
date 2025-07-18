@@ -1,3 +1,10 @@
+---
+layout: post
+title: "7월 4일 금요일 TIL(자바 객체지향, static)"
+date: 2025-07-04 00:00:00 +0900
+categories: July_week1
+---
+
 # 7월 4일 금요일 TIL 작성
 
 ## 1. 학습 주제

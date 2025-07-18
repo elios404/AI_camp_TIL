@@ -1,3 +1,10 @@
+---
+layout: post
+title: "7월 14일 월요일 TIL(자바 StringBuilder, enum, getClass(), 제너릭)"
+date: 2025-07-14 00:00:00 +0900
+categories: July_week3
+---
+
 # 7월 14일 월요일 TIL 작성
 
 ## 1. 학습 주제

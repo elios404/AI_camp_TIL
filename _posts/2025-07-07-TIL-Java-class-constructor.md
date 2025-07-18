@@ -1,3 +1,10 @@
+---
+layout: post
+title: "7월 7일 월요일 TIL(자바 클래스, 생성자, 접근제어자)"
+date: 2025-07-07 00:00:00 +0900
+categories: July_week2
+---
+
 # 7월 7일 월요일 TIL 작성
 
 ## 1. 학습 주제
