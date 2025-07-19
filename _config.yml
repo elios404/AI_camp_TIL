@@ -1,3 +1,4 @@
-theme: minima # 또는 원하는 다른 Jekyll 테마
+theme: Satellite # 또는 원하는 다른 Jekyll 테마
 title: 나의 AI 캠프 TIL
 description: AI 캠프 학습 일지입니다.
+baseurl: "/AI_camp_TIL"
