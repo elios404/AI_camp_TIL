@@ -1,3 +1,10 @@
+---
+layout: post
+title: "월 일 요일 TIL()"
+date: 2025-07-16 00:00:00 +0900
+categories: July_week3
+---
+
 # 월 일 요일 TIL 작성
 
 ## 1. 학습 주제
