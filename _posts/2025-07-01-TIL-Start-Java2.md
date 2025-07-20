@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "7월 1일 화요일 TIL(자바 시작 2일차)"
-date: 2025-07-01 00:00:00 +0900
+date: 2025-07-01 00:00:01 +0900
 categories: July_week1
 ---
 

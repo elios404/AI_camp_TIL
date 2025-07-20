@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "7월 15일 화요일 TIL(자바 Collections, inner/anonymous class, lambda, functional Interface)"
-date: 2025-07-15 00:00:00 +0900
+date: 2025-07-15 00:00:01 +0900
 categories: July_week3
 ---
 
