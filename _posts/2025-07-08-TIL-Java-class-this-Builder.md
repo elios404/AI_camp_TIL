@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "7월 8일 화요일 TIL(자바 클래스 this, Builder D.P.)"
-date: 2025-07-08 00:00:01 +0900
+date: 2025-07-08 18:00:01 +0900
 categories: July_week2
 ---
 

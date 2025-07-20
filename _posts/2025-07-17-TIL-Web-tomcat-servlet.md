@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "7월 17일 목요일 TIL(웹 구조, tomcat, servlet)"
-date: 2025-07-17 00:00:01 +0900
+date: 2025-07-17 18:00:01 +0900
 categories: July_week3
 ---
 

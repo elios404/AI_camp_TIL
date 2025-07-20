@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "7월 16일 수요일 TIL(자바 Optional, Exception, Web)"
-date: 2025-07-16 00:00:01 +0900
+date: 2025-07-16 18:00:01 +0900
 categories: July_week3
 ---
 

@@ -3,3 +3,4 @@ title: Cheon's TIL
 description: 인공지능 사관학교 TIL 일지입니다.
 baseurl: "/AI_camp_TIL"
 permalink: /:categories/:year/:month/:day/:title.html
+timezone: Asia/Seoul
