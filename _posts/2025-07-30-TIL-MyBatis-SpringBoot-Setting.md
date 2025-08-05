@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "7월 30일 수요일 TIL(MyBatis, Spring Boot Setting)"
-date: 2025-06-01 18:00:00 +0900
+date: 2025-07-30 18:00:00 +0900
 categories: July_week5
 ---
 

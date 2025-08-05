@@ -219,6 +219,112 @@ delete 는 payload 가 불가능, form 을 통해서 정보를 보낼 수 없다
 
 삭제는 PathVariable 이 필요하다.: 정확합니다. 삭제 대상을 명확히 지정하기 위해 URI 경로 변수로 deptno를 받는 것이 가장 RESTful한 방식입니다.
 
+### list.html (RESTful 방식)
+
+```HTML
+	<script>
+		
+		// ajax(비동기 요청 처리)
+		function getDetail(deptno) {
+			//가운데 {} 는 파라미터, 현재는 추가 매개변수 없음
+			// 이런 방식으로 요소를 선택하고 DOM을 변경하는 것으로 화면을 다시 렌더링한다.
+			$.get('/api/depts/' + deptno,{},function (dept) {
+				$("#deptNo").val(dept.deptNo);
+				$("#dName").val(dept.dName);
+				$("#loc").val(dept.loc);
+			}); 
+		}
+		
+		//getDetail(10);
+		
+		
+		
+		function getList() {
+			
+			let result = '';
+			
+			$.get('/api/depts',{},function(list) {
+				console.log(list, list.deptList[0]);
+				
+				for(let dept of list.deptList) {
+					console.log(dept);
+					
+					//` `를 통해서 변수를 그대로 사용 가능, 문자열에서?
+					// 화면을 만들기 위해서 요소 객체를 생성
+					result += `
+					<tr>
+						<td >${dept.deptNo}</td>
+						// 이 부분 잘 모르겠음
+						<td><a href="#" class="details" data-deptNo="${dept.deptNo}">${dept.dName}</a></td>
+						<td>${dept.loc}</td>
+					</tr>
+					
+					`;
+				} 
+				
+				//$('#dept_table > tbody').append(result); //현재 메모리에 계속해서 추가함. 페이징 할 때 좋음. 그러나 현재 우리가 원하는 기능은 아님
+				$('#dept_table > tbody').empty().append(result);
+			});
+		
+		}
+		
+		// DOM 생성 이전에도 실행 가능
+		//getList();
+		
+		// DOM 생성 이후에 사용
+		$(document).ready(function() {
+			getList();
+		})
+		.on('click','.details',function() {
+			const deptno = $(this).attr('data-deptNo');
+			console.log(deptno);
+			getDetail(deptno);
+		});
+		
+		
+		// 버튼별로 다르게 작동하도록, 어떻게 작동하는 지 공부하기!!
+		$('#frmForm').on('submit', function(e) { 
+			e.preventDefault(); 
+			
+
+			const method = {
+				'btnNew' : 'POST',	
+				'btnUpdate' : 'PUT',	
+				'btnDelete' : 'DELETE'
+			};
+			
+
+			const btn = event.submitter.id; 
+			console.log(btn, method[btn]); 
+			
+			let deptno = '';
+			
+			if (method[btn] == 'DELETE') {
+				deptno = $('#deptNo').val();
+			}
+			
+			$.ajax({
+				type: method[btn],
+				url: '/api/depts/'+deptno,
+				data: $('#frmForm').serialize(),
+				success: function(result) {
+					alert(result.message);
+					getList();
+					$("#deptNo").val('');
+					$("#dName").val('');
+					$("#loc").val('');
+				},
+				error : function(request,status, error) {
+					console.log(error);
+				}
+			}	
+			);
+			
+		}); 
+
+	</script>
+```
+
 
 
 ## 3. 문제 해결 경험 (학습과정에서 직면했던 문제와 에러, 이를 어떻게 해결했는가)
