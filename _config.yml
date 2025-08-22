@@ -4,3 +4,10 @@ description: 인공지능 사관학교 TIL 일지입니다.
 baseurl: "/AI_camp_TIL"
 permalink: /:categories/:year/:month/:day/:title.html
 timezone: Asia/Seoul
+
+# 페이지네이션 설정 추가
+plugins:
+  - jekyll-paginate
+
+paginate: 15
+paginate_path: "/page:num/"
