@@ -12,3 +12,21 @@ title: 학습 TIL 일지 목록
     </li>
 {% endfor %}
 </ul>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">이전</a>
+  {% else %}
+    <span class="previous">이전</span>
+  {% endif %}
+
+  <span class="page_number">
+    {{ paginator.page }} / {{ paginator.total_pages }}
+  </span>
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="next">다음</a>
+  {% else %}
+    <span class="next">다음</span>
+  {% endif %}
+</div>
