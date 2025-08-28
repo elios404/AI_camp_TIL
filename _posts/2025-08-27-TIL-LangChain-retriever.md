@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "8월 27일 화요일 TIL(LangChain, Retriever)"
+title: "8월 27일 수요일 TIL(LangChain, Retriever)"
 date: 2025-08-27 18:00:00 +0900
 categories: July_week9
 ---
