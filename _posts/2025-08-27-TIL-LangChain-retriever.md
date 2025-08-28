@@ -5,7 +5,7 @@ date: 2025-08-27 18:00:00 +0900
 categories: July_week9
 ---
 
-# 8월 27일 화요일 TIL 작성
+# 8월 27일 수요일 TIL 작성
 
 ## 1. 학습 주제
 - retriever
